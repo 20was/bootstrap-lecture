@@ -36,3 +36,11 @@
   width: 50%;
   padding: 40px;
 }
+.contact-row h3 {
+  padding: 10px;
+  text-align: center;
+}
+form {
+  border: 1px solid gray;
+  padding: 15px;
+}
