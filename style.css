@@ -20,7 +20,6 @@
 .card-container {
   margin-top: 20px;
 }
-
 .bird-row {
   background-color: #f7f7f7;
 }
@@ -31,4 +30,9 @@
 }
 .paint-row {
   background-color: #f1f1f1;
+}
+.card-img-overlay {
+  text-align: left;
+  width: 50%;
+  padding: 40px;
 }
