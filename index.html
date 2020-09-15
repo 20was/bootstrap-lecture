@@ -20,7 +20,7 @@
     <title>Bishwas Adhikari</title>
   </head>
 
-  <body class="container">
+  <body>
     <!-- navbar start -->
     <nav class="navbar navbar-expand-lg navigation fixed-top">
       <a class="navbar-brand" href="#">Nepal</a>
@@ -114,7 +114,7 @@
       </a>
     </div>
 
-    <div class="card-container">
+    <div class="container card-container">
       <div class="row">
         <div class="col-lg-4">
           <div class="image-card">
@@ -160,7 +160,6 @@
         </div>
       </div>
     </div>
-
     <div class="row bird-row">
       <div class="col-6 bird-content">
         <h2>Bird Image</h2>
@@ -172,13 +171,13 @@
         </p>
       </div>
       <div class="col-6">
-        <img src="img/section/bird.png" alt="" srcset="" style="width: 100%;" />
+        <img src="img/section/bird.png" alt="" srcset="" style="width: 100%" />
       </div>
     </div>
 
     <div class="row paint-row">
       <div class="col-6">
-        <img src="img/section/paint.png" alt="" srcset="" style="width: 60%;" />
+        <img src="img/section/paint.png" alt="" srcset="" style="width: 60%" />
       </div>
       <div class="col-6 paint-content">
         <h2>Painting Image</h2>
@@ -194,8 +193,9 @@
         </p>
       </div>
     </div>
+
     <div class="row card bg-dark text-white">
-      <img src="img/section/women.jpg" class="card-img" alt="..." />
+      <img src="img/section/women.jpg" alt="Women image" class="card-img" />
       <div class="card-img-overlay">
         <h2>An old lady</h2>
         <p class="card-text">
@@ -210,18 +210,17 @@
         </p>
       </div>
     </div>
-    <!-- contact form start -->
     <div class="row contact-row">
       <div class="col-12">
         <h3>Contact Us</h3>
       </div>
       <div class="col-6">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7066.5082281322675!2d83.46154687625682!3d27.6785398823446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996868026134fab%3A0xe8621ad296809ae2!2sKshitiz%20International%20Collage!5e0!3m2!1sen!2snp!4v1593529692830!5m2!1sen!2snp"
-          width="550"
-          height="400"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1381.7218616858243!2d85.31372144407099!3d27.70605055085099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19006da38c97%3A0xeb1680160e08401c!2sRatna%20Park!5e0!3m2!1sen!2snp!4v1600189270686!5m2!1sen!2snp"
+          width="600"
+          height="450"
           frameborder="0"
-          style="border: 1px solid gray;"
+          style="border: 0"
           allowfullscreen=""
           aria-hidden="false"
           tabindex="0"
@@ -229,47 +228,76 @@
       </div>
       <div class="col-6">
         <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" />
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Password</label>
+              <input type="password" class="form-control" id="inputPassword4" />
+            </div>
+          </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Full Name</label>
+            <label for="inputAddress">Address</label>
             <input
               type="text"
               class="form-control"
-              id="exampleInputPassword1"
+              id="inputAddress"
+              placeholder="1234 Main St"
             />
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
+            <label for="inputAddress2">Address 2</label>
             <input
-              type="email"
+              type="text"
               class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
+              id="inputAddress2"
+              placeholder="Apartment, studio, or floor"
             />
-            <small id="emailHelp" class="form-text text-muted"
-              >We'll never share your email with anyone else.</small
-            >
           </div>
-
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity" />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">Province</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>Province 1</option>
+                <option>Province 2</option>
+                <option>Province 3</option>
+                <option>Province 4</option>
+                <option>Province 5</option>
+                <option>Province 6</option>
+                <option>Province 7</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Zip</label>
+              <input type="text" class="form-control" id="inputZip" />
+            </div>
+          </div>
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Enter your message</label>
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" />
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
           </div>
-          <button type="submit" class="btn btn-danger">Send Message</button>
+          <button type="submit" class="btn btn-secondary">Sign in</button>
         </form>
       </div>
     </div>
-    <!-- contact form end -->
+
     <!-- Footer start  -->
     <footer>
-      <p>
-        copyright &copy; Bishwas Adhikari - 2020
-      </p>
+      <p>copyright &copy; Bishwas Adhikari - 2020</p>
     </footer>
     <!-- Footer End -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
