@@ -44,3 +44,12 @@ form {
   border: 1px solid gray;
   padding: 15px;
 }
+footer {
+  background-color: #045c94;
+}
+footer p {
+  padding: 20px;
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 0px;
+}
